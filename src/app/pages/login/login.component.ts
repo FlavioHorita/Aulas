@@ -13,7 +13,7 @@ export class LoginComponent {
   login = '';
   senha = '';
   titulo = 'Pagina de Acesso';
-  label = 'botão';
+  label = 'Entrar';
   aparencia: MatFormFieldAppearance = 'fill';
 
 
