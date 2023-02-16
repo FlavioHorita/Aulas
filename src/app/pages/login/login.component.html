@@ -1,0 +1,24 @@
+<div class="cartao">
+
+  <div class="forms">
+    <h3>{{titulo}}</h3>
+
+    <mat-form-field [appearance]="aparencia">
+      <mat-label>Login</mat-label>
+      <input matInput
+             [(ngModel)]="login">
+    </mat-form-field>
+
+    <mat-form-field [appearance]="aparencia">
+      <mat-label>Senha</mat-label>
+      <input matInput
+             [(ngModel)]="senha">
+    </mat-form-field>
+
+    <button mat-stroked-button
+            (click)="validacao_login()">Entrar</button>
+
+
+  </div>
+
+</div>
