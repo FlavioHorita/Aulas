@@ -12,7 +12,8 @@ export class LoginComponent {
 
   login = '';
   senha = '';
-  titulo = 'Tela de Login';
+  titulo = 'Pagina de Acesso';
+  label = 'botão';
   aparencia: MatFormFieldAppearance = 'fill';
 
 
