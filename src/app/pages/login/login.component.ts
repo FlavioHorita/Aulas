@@ -15,6 +15,20 @@ export class LoginComponent {
   titulo = 'Pagina de Acesso';
   label = 'Entrar';
   aparencia: MatFormFieldAppearance = 'fill';
+  logins = [
+    {
+      login: 'japa',
+      senha: 'leo'
+    },
+    {
+      login: 'ikeda',
+      senha: 'taiki'
+    },
+    {
+      login: 'rey',
+      senha: 'kaito'
+    }
+  ]
 
 
   constructor(private router: Router) { }
@@ -28,7 +42,13 @@ export class LoginComponent {
     const login = this.login;
     const senha = this.senha;
 
-    if (login === 'japa' && senha === 'leo') {
+    const loginsPermitidos = this.logins;
+    const usuario_encontrado = loginsPermitidos.find(user => {
+      return user.login === login && user.senha === senha;
+    });
+
+
+    if (usuario_encontrado) {
       this.redirecionar_home()
 
     } else { alert('Login ou senha inválida!') }
