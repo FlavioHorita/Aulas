@@ -23,6 +23,10 @@ export class LoginComponent {
     {
       login: 'ikeda',
       senha: 'taiki'
+    },
+    {
+      login: 'rey',
+      senha: 'kaito'
     }
   ]
 
